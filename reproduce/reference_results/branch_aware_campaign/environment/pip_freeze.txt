@@ -1,0 +1,65 @@
+about-time==4.2.1
+alive-progress==3.3.0
+appnope @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_46iquy4y0r/croot/appnope_1750774774351/work
+asttokens @ file:///<local-build-root>/croot/asttokens_1773135889661/work
+autograd==1.8.0
+cffi==2.0.0
+cma==4.4.4
+comm @ file:///opt/miniconda3/conda-bld/comm_1763119153703/work
+contourpy==1.3.3
+cycler==0.12.1
+debugpy @ file:///opt/miniconda3/conda-bld/debugpy_1762421636036/work
+decorator @ file:///opt/miniconda3/conda-bld/decorator_1757341235959/work
+Deprecated==1.3.1
+executing @ file:///opt/miniconda3/conda-bld/executing_1757061235776/work
+filelock==3.29.0
+fonttools==4.63.0
+fsspec==2026.4.0
+graphemeu==0.7.2
+iniconfig==2.3.0
+ipykernel @ file:///<local-build-root>/croot/ipykernel_1772612352018/work
+ipython @ file:///<local-build-root>/croot/ipython_1773317840347/work
+ipython_pygments_lexers @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_25fteymumy/croot/ipython_pygments_lexers_1744753256449/work
+jedi @ file:///<local-build-root>/croot/jedi_1778681758103/work
+Jinja2==3.1.6
+jupyter_client @ file:///<local-build-root>/croot/jupyter_client_1768399009291/work
+jupyter_core @ file:///opt/miniconda3/conda-bld/jupyter_core_1764588284546/work
+kiwisolver==1.5.0
+MarkupSafe==3.0.3
+matplotlib==3.10.9
+matplotlib-inline @ file:///opt/miniconda3/conda-bld/matplotlib-inline_1762779171588/work
+moocore==0.3.1
+mpmath==1.3.0
+nest-asyncio @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_310vb5e2a0/croot/nest-asyncio_1708532678212/work
+networkx==3.6.1
+numpy==2.4.6
+packaging==26.0
+pandas==3.0.3
+parso @ file:///<local-build-root>/croot/parso_1778674012754/work
+pexpect @ file:///opt/miniconda3/conda-bld/pexpect_1762535935939/work
+pillow==12.2.0
+platformdirs @ file:///<local-build-root>/croot/platformdirs_1773652975053/work
+pluggy==1.6.0
+prompt_toolkit @ file:///opt/miniconda3/conda-bld/prompt-toolkit_1761744881146/work
+psutil @ file:///opt/miniconda3/conda-bld/psutil_1761896323688/work
+ptyprocess @ file:///opt/miniconda3/conda-bld/ptyprocess_1762424170819/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl#sha256=3470be7f810474c8a2ecfcd6e02acc6aea8483ab595417fa4e336362a349933e
+pure_eval @ file:///opt/miniconda3/conda-bld/pure_eval_1757067067189/work
+pycparser==3.0
+Pygments @ file:///<local-build-root>/croot/pygments_1775127021103/work
+pymoo==0.6.1.6
+pyparsing==3.3.2
+pytest==9.1.1
+python-dateutil @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_66ud1l42_h/croot/python-dateutil_1716495741162/work
+pyzmq @ file:///opt/miniconda3/conda-bld/pyzmq_1762375616040/work
+SciencePlots==2.2.2
+scipy==1.17.1
+six @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_03myqm7p6o/croot/six_1744271511946/work
+stack_data @ file:///opt/miniconda3/conda-bld/stack_data_1757067039886/work
+sympy==1.14.0
+torch==2.12.0
+tornado @ file:///<local-build-root>/croot/tornado_1774303634539/work
+tqdm==4.67.3
+traitlets @ file:///<local-build-root>/croot/traitlets_1778743188716/work
+typing_extensions @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_dffmcwqo6o/croot/typing_extensions_1756281471323/work
+wcwidth @ file:///<local-build-root>/croot/wcwidth_1767780856263/work
+wrapt==2.2.1

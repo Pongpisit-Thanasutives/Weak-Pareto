@@ -1,0 +1,42 @@
+{
+  "A": {
+    "spec": {
+      "alpha": 0.85,
+      "bx": 1.7,
+      "by": 1.4,
+      "cx": 0.0,
+      "nux": 0.3,
+      "nuy": 0.2
+    },
+    "nt": 90,
+    "ng": 80,
+    "T": 3.0,
+    "active_fourier_coefficients": 10,
+    "max_abs_lambda_T_alpha": 6.167295355957427,
+    "l1_relative_residual": 0.006022681435860377,
+    "field_range": [
+      -2.2727631558003973,
+      1.946408421280953
+    ]
+  },
+  "B": {
+    "spec": {
+      "alpha": 0.85,
+      "bx": 1.7,
+      "by": 1.4,
+      "cx": 0.6,
+      "nux": 0.3,
+      "nuy": 0.2
+    },
+    "nt": 90,
+    "ng": 80,
+    "T": 3.0,
+    "active_fourier_coefficients": 10,
+    "max_abs_lambda_T_alpha": 5.339834685455787,
+    "l1_relative_residual": 0.005269457904289446,
+    "field_range": [
+      -2.2727631558003973,
+      1.946408421280953
+    ]
+  }
+}

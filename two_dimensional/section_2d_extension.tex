@@ -1,0 +1,85 @@
+% Exact excerpt from the submission manuscript.
+% Main-text subsection followed by the detailed appendix section.
+
+\subsection{Extension to two spatial dimensions}\label{subsec:twod}
+
+The preceding discovery benchmarks use one spatial coordinate. To test whether the candidate encoding is tied to that setting, we extend each linear spatial term by a direction label $d_j\in\{x,y\}$,
+\begin{equation}
+{}^{C}_{0}D_t^\alpha u=\sum_{j=1}^{c}\xi_j\,\Xop_{\beta_j}^{(d_j)}u .
+\label{eq:twod-model}
+\end{equation}
+The temporal and two spatial test bases remain separable, and the discrete adjoint is applied along the coordinate named by $d_j$. Mode-wise tensor contractions avoid assembling a dense spatial Kronecker matrix. The Pareto search, elbow rule, and exact-order refit are otherwise unchanged. The present example restricts the admitted powers to $p=0$; it tests directional encoding rather than nonlinear two-dimensional discovery.
+
+We use two doubly periodic benchmarks on $[0,2\pi)^2$:
+\begin{align}
+{}^{C}_{0}D_t^{0.85}u
+ &=0.30D_x^{1.70}u+0.20D_y^{1.40}u, \label{eq:twod-a}\\
+{}^{C}_{0}D_t^{0.85}u
+ &=-0.60\,\partial_xu+0.30D_x^{1.70}u+0.20D_y^{1.40}u. \label{eq:twod-b}
+\end{align}
+Benchmark~\eqref{eq:twod-b} requires the selector to separate two orders in the $x$ direction while assigning a third order to $y$. Each Fourier mode is propagated semi-analytically as $\widehat u(\bm\kappa,t)=\widehat u(\bm\kappa,0)E_{\alpha,1}(\lambda(\bm\kappa)t^\alpha)$, independently of the L1 evaluator used by discovery. On temporal grids with $n_t=90,179,$ and $357$, an independent L1 residual is $6.02\times10^{-3}$, $2.66\times10^{-3}$, and $1.18\times10^{-3}$, respectively, giving an observed rate $1.18$ close to the expected $2-\alpha=1.15$.
+
+The reported grid is $90\times80\times80$. Applying the paper test-count rule independently to both spatial axes gives $30\times40\times40=48{,}000$ overlapping weak equations from the same dense data tensor. These rows are integral measurements, not independent observations. Their tensor-product refinement is computationally tractable because the example reduces repeated objective evaluations to precomputed Gram tables. We use multiplicative-uniform noise at $0\%,1\%,5\%,10\%,$ and $20\%$, $c_{\max}=4$, $\alpha\in[0.55,1.25]$, $\beta\in[0.50,2.50]$, and the same optimisation and recovery rules as Section~\ref{subsec:setup}. Boundary trimming is not used. Table~\ref{tab:twod} reports recovery across all 25 noise--seed combinations.
+
+\begin{table}[t]
+\centering
+\caption{Two-dimensional directional discovery over five seeds and five noise levels ($25$ runs per benchmark). Support/direction recovery requires the correct support size and direction multiset; complete operator recovery additionally requires all orders to satisfy the protocol of Section~\ref{subsec:setup}.}\label{tab:twod}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccc}
+\toprule
+Benchmark & Active terms & Support/direction & Operator \\
+\midrule
+A: anisotropic diffusion & 2 & $25/25$ & $25/25$ \\
+B: advection--diffusion & 3 & $25/25$ & $25/25$ \\
+\botrule
+\end{tabular*}
+\end{table}
+
+Both benchmarks retain complete direction and operator recovery throughout the noise sweep. At $20\%$ noise, $(e_\alpha,e_\beta^{\max},e_\xi^{\max})$ is $(0.00081\pm0.00054,0.00217\pm0.00140,0.0111\pm0.0023)$ for Benchmark~\eqref{eq:twod-a} and $(0.00207\pm0.00133,0.01221\pm0.00259,0.04798\pm0.00890)$ for Benchmark~\eqref{eq:twod-b}. A second spatial resolution, $90\times112\times112$, increases the number of weak rows to $94{,}080$ and again gives $25/25$ recoveries for Benchmark~\eqref{eq:twod-a}. At $20\%$ noise, $e_\xi^{\max}$ decreases from $0.0111$ to $0.0084$, while the order errors remain of comparable magnitude; this check supports grid stability but not a claim of monotone convergence. Appendix~\ref{app:twod} reports the resolution and window-width diagnostics. The experiment establishes that the encoding and tensor construction extend to coordinate-dependent orders.
+
+\FloatBarrier
+
+% -----------------------------------------------------------------------------
+
+\section{Two-dimensional settings and sensitivity}\label{app:twod}
+
+The two-dimensional results use an example extension distributed in the Supplementary Information. It reuses the one-dimensional implementations of the Gaussian test basis and the L1 Caputo adjoint, while its data generator includes a complex-capable evaluator of $E_{\alpha,1}$ because directional Fourier multipliers are complex. The generator and discovery code are independent in time: data use semi-analytic Mittag--Leffler propagation, whereas discovery evaluates the Caputo target through the transposed L1 matrix. The field contains five conjugate Fourier-mode pairs, and the supplied archive records the data hashes, software environment, per-seed estimates, validation curves, and complete summary.
+
+The default spatial width applies the one-dimensional paper rule independently to $x$ and $y$. Table~\ref{tab:twod-width} compares three fixed fractions of the domain length on Benchmark~\eqref{eq:twod-b} at $5\%$ noise. The inherited rule and $0.10L$ recover the complete structure in every seed, whereas $0.16L$ and $0.24L$ select only two terms. This complements Appendix~\ref{app:ksens}, where narrower windows eventually degrade operator recovery: no two-dimensional tuning was needed here, but window scale remains problem dependent.
+
+\begin{table}[t]
+\centering
+\caption{Spatial-window sensitivity for Benchmark~\eqref{eq:twod-b} at $5\%$ multiplicative noise (five seeds). Errors are conditioned on support and direction recovery.}\label{tab:twod-width}
+\footnotesize
+\setlength{\tabcolsep}{1.2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccccc}
+\toprule
+Width rule & \shortstack{Support/\\direction} & Operator & $e_\alpha$ & $e_\beta^{\max}$ & $e_\xi^{\max}$ \\
+\midrule
+Inherited paper rule & $5/5$ & $5/5$ & $0.00177\pm0.00041$ & $0.00483\pm0.00045$ & $0.01336\pm0.00197$ \\
+$0.10L$ & $5/5$ & $5/5$ & $0.00150\pm0.00034$ & $0.00875\pm0.00080$ & $0.00669\pm0.00119$ \\
+$0.16L$ & $0/5$ & $0/5$ & -- & -- & -- \\
+$0.24L$ & $0/5$ & $0/5$ & -- & -- & -- \\
+\botrule
+\end{tabular*}
+\end{table}
+
+Table~\ref{tab:twod-resolution} compares Benchmark~\eqref{eq:twod-a} at the reported and refined spatial grids. Both resolutions recover all five noise levels and seeds. The larger tensor-product set of weak rows improves the coefficient error at $20\%$ noise but does not reduce every order error, so the result is interpreted as a grid-stability check rather than a convergence study. Sparse observation patterns would require a different row-construction and validation analysis and are outside the present scope.
+
+\begin{table}[t]
+\centering
+\caption{Spatial-resolution check for Benchmark~\eqref{eq:twod-a}. Recovery counts aggregate 25 runs; errors are at $20\%$ noise.}\label{tab:twod-resolution}
+\footnotesize
+\setlength{\tabcolsep}{1.2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccccc}
+\toprule
+\shortstack{Field\\grid} & \shortstack{Weak\\rows} & Operator & $e_\alpha$ & $e_\beta^{\max}$ & $e_\xi^{\max}$ \\
+\midrule
+$90\times80\times80$ & $48{,}000$ & $25/25$ & $0.00081\pm0.00054$ & $0.00217\pm0.00140$ & $0.0111\pm0.0023$ \\
+$90\times112\times112$ & $94{,}080$ & $25/25$ & $0.00088\pm0.00034$ & $0.00270\pm0.00088$ & $0.00843\pm0.00271$ \\
+\botrule
+\end{tabular*}
+\end{table}
+
+\FloatBarrier

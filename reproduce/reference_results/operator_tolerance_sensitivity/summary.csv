@@ -1,0 +1,11 @@
+absolute_order_tolerance,method,recoveries,runs
+0.1,Strong Pareto,0,60
+0.1,Weak-Pareto,40,60
+0.125,Strong Pareto,0,60
+0.125,Weak-Pareto,45,60
+0.15,Strong Pareto,0,60
+0.15,Weak-Pareto,47,60
+0.175,Strong Pareto,0,60
+0.175,Weak-Pareto,47,60
+0.2,Strong Pareto,0,60
+0.2,Weak-Pareto,52,60

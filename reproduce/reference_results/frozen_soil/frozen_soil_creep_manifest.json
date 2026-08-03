@@ -1,0 +1,28 @@
+{
+  "model": "D_t^alpha epsilon = sigma/eta - (E/eta) epsilon",
+  "integral_form": "epsilon-epsilon(0) = c0*t^alpha/Gamma(alpha+1) + c1*I_t^alpha epsilon",
+  "quadrature": "left-endpoint product integration on a 400-point PCHIP grid",
+  "alpha_bounds": [
+    0.1,
+    0.9
+  ],
+  "data_files_redistributed": false,
+  "soil_specs": [
+    {
+      "name": "clay",
+      "filename": "creep.mat",
+      "stress_mpa": 1.11,
+      "reference_alpha": 0.371,
+      "reference_eta": 0.103,
+      "reference_E": 0.32
+    },
+    {
+      "name": "silt",
+      "filename": "silt.mat",
+      "stress_mpa": 1.14,
+      "reference_alpha": 0.562,
+      "reference_eta": 0.0778,
+      "reference_E": 0.442
+    }
+  ]
+}

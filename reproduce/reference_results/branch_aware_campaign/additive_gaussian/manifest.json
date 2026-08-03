@@ -1,0 +1,25 @@
+{
+  "noise_definition": "additive Gaussian sd = noise_percent/100 * std(clean field)",
+  "sampling_definition": "retain every second time snapshot; no interpolation or imputation",
+  "seeds_requested": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "conditions_requested": [
+    "additive_gaussian"
+  ],
+  "benchmarks_requested": [
+    "paper_FADE_tsfade_fft",
+    "synthetic_fractional_burgers"
+  ],
+  "methods_requested": [
+    "Weak-Pareto",
+    "Strong Pareto"
+  ],
+  "noise_percent": 10.0,
+  "fast": false,
+  "incremental_output": "results/normalized_metric_final/additive_gaussian/per_seed.jsonl"
+}

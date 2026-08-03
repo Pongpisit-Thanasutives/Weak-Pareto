@@ -1,0 +1,9 @@
+Final normalized-metric publication campaign
+Hardware: Apple M4 Pro (14 cores: 10 performance, 4 efficiency)
+Memory: 64 GB unified memory
+Execution: CPU-only
+Operating system: macOS 26.5.2, arm64
+Python: 3.11.15
+Campaign worker processes: 5
+Runtime table: uncached serial single-seed measurements with internal BLAS thread caps
+Host name, serial number, hardware UUID, and device identifiers are intentionally omitted.

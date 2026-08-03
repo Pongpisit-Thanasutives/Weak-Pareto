@@ -1,0 +1,4 @@
+# Optional practical denoising extras.
+bm3d
+scikit-image>=0.21
+SciencePlots>=2.1  # only needed to regenerate the paper figures (reproduce/make_figures.py)

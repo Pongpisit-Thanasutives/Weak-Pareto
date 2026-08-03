@@ -1,0 +1,3 @@
+-r requirements.txt
+# Neural reconstruction and automatic differentiation for the Yu et al. framework.
+torch>=2.1

@@ -1,0 +1,7 @@
+-r requirements.txt
+# Optional: BM3D denoising backend for the practical high-noise variant.
+# The code runs without this package by using wavelet/NLM/Gaussian fallbacks.
+bm3d
+scikit-image>=0.21
+# Figure generation (reproduce/make_figures.py)
+SciencePlots>=2.1

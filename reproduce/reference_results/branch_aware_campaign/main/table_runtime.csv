@@ -1,0 +1,4 @@
+benchmark,weak_time_s,strong_time_s,weak_rows,de_budget
+FADE,7.4,5.0,2640,7x24
+Frac. RD (space),1.8,3.2,1440,7x24
+Fractional Burgers,8.6,5.5,2640,7x24

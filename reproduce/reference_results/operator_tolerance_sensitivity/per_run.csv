@@ -1,0 +1,121 @@
+experiment,benchmark,noise_percent,method,seed,support_power_recovered,temporal_mode_recovered,identity_terms_recovered,max_positive_order_abs_error,recovered_at_0p1,recovered_at_0p125,recovered_at_0p15,recovered_at_0p175,recovered_at_0p2
+additive_gaussian,paper_FADE_tsfade_fft,10.0,Strong Pareto,0,False,True,True,0.9371100000000001,False,False,False,False,False
+additive_gaussian,paper_FADE_tsfade_fft,10.0,Strong Pareto,1,False,True,True,0.9253899999999999,False,False,False,False,False
+additive_gaussian,paper_FADE_tsfade_fft,10.0,Strong Pareto,2,False,True,True,0.91391,False,False,False,False,False
+additive_gaussian,paper_FADE_tsfade_fft,10.0,Strong Pareto,3,False,True,True,0.93834,False,False,False,False,False
+additive_gaussian,paper_FADE_tsfade_fft,10.0,Strong Pareto,4,False,True,True,0.97207,False,False,False,False,False
+additive_gaussian,paper_FADE_tsfade_fft,10.0,Weak-Pareto,0,True,True,True,0.14493999999999985,False,False,True,True,True
+additive_gaussian,paper_FADE_tsfade_fft,10.0,Weak-Pareto,1,True,True,True,0.11176999999999992,False,True,True,True,True
+additive_gaussian,paper_FADE_tsfade_fft,10.0,Weak-Pareto,2,True,True,True,0.11970999999999998,False,True,True,True,True
+additive_gaussian,paper_FADE_tsfade_fft,10.0,Weak-Pareto,3,True,True,True,0.10675999999999997,False,True,True,True,True
+additive_gaussian,paper_FADE_tsfade_fft,10.0,Weak-Pareto,4,True,True,True,0.18605000000000005,False,False,False,False,True
+additive_gaussian,synthetic_fractional_burgers,10.0,Strong Pareto,0,False,False,True,0.24107000000000012,False,False,False,False,False
+additive_gaussian,synthetic_fractional_burgers,10.0,Strong Pareto,1,False,False,True,0.22497000000000011,False,False,False,False,False
+additive_gaussian,synthetic_fractional_burgers,10.0,Strong Pareto,2,False,False,True,0.2240200000000001,False,False,False,False,False
+additive_gaussian,synthetic_fractional_burgers,10.0,Strong Pareto,3,False,False,True,0.2502,False,False,False,False,False
+additive_gaussian,synthetic_fractional_burgers,10.0,Strong Pareto,4,False,False,True,0.28315,False,False,False,False,False
+additive_gaussian,synthetic_fractional_burgers,10.0,Weak-Pareto,0,True,True,True,0.005009999999999959,True,True,True,True,True
+additive_gaussian,synthetic_fractional_burgers,10.0,Weak-Pareto,1,True,True,True,0.007680000000000131,True,True,True,True,True
+additive_gaussian,synthetic_fractional_burgers,10.0,Weak-Pareto,2,True,False,True,0.0023699999999999832,False,False,False,False,False
+additive_gaussian,synthetic_fractional_burgers,10.0,Weak-Pareto,3,True,True,True,0.0021899999999999142,True,True,True,True,True
+additive_gaussian,synthetic_fractional_burgers,10.0,Weak-Pareto,4,True,True,True,0.0008399999999999519,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,1.0,Strong Pareto,0,False,True,True,0.10780642113481076,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,1.0,Strong Pareto,1,False,True,True,0.1072836945896436,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,1.0,Strong Pareto,2,False,True,True,0.1041377825675811,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,1.0,Strong Pareto,3,False,True,True,0.10507994399782294,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,1.0,Strong Pareto,4,False,True,True,0.11052264356445762,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,1.0,Weak-Pareto,0,True,True,True,0.03297756664515039,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,1.0,Weak-Pareto,1,True,True,True,0.022233625352848563,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,1.0,Weak-Pareto,2,True,True,True,0.02650145074062782,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,1.0,Weak-Pareto,3,True,True,True,0.02041766676821033,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,1.0,Weak-Pareto,4,True,True,True,0.022600460355743035,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,5.0,Strong Pareto,0,True,True,True,0.2955621293575137,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,5.0,Strong Pareto,1,True,True,True,0.29968826769893187,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,5.0,Strong Pareto,2,True,True,True,0.30000000000000004,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,5.0,Strong Pareto,3,True,True,True,0.2993675735947201,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,5.0,Strong Pareto,4,False,True,True,0.23263110733886916,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,5.0,Weak-Pareto,0,True,True,True,0.04730503341465475,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,5.0,Weak-Pareto,1,True,True,True,0.010941439309996026,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,5.0,Weak-Pareto,2,True,True,True,0.01081378652723397,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,5.0,Weak-Pareto,3,True,True,True,0.016187000836068277,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,5.0,Weak-Pareto,4,True,True,True,0.013419284401576581,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,10.0,Strong Pareto,0,False,True,True,0.953306638116185,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,10.0,Strong Pareto,1,False,True,True,0.9315203438333626,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,10.0,Strong Pareto,2,False,True,True,0.9693324618205243,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,10.0,Strong Pareto,3,False,True,True,0.9269242718450212,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,10.0,Strong Pareto,4,False,True,True,0.9362844425010097,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,10.0,Weak-Pareto,0,True,True,True,0.03333513526357623,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,10.0,Weak-Pareto,1,True,True,True,0.08721977316663199,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,10.0,Weak-Pareto,2,True,True,True,0.046385758578749936,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,10.0,Weak-Pareto,3,True,True,True,0.08370677237153568,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,10.0,Weak-Pareto,4,True,True,True,0.10086404200445531,False,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,20.0,Strong Pareto,0,False,True,True,0.9522092800025856,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,20.0,Strong Pareto,1,False,True,True,0.931072562233219,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,20.0,Strong Pareto,2,False,True,True,0.9658201321309952,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,20.0,Strong Pareto,3,False,True,True,0.928563022499262,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,20.0,Strong Pareto,4,False,True,True,0.9372164178994831,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,20.0,Weak-Pareto,0,True,True,True,0.06725031376267276,True,True,True,True,True
+multiplicative,paper_FADE_tsfade_fft,20.0,Weak-Pareto,1,True,True,True,0.26057833952815446,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,20.0,Weak-Pareto,2,True,True,True,0.22393896704384408,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,20.0,Weak-Pareto,3,True,True,True,0.2675704771739633,False,False,False,False,False
+multiplicative,paper_FADE_tsfade_fft,20.0,Weak-Pareto,4,True,True,True,0.2933320500493637,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,1.0,Strong Pareto,0,False,False,True,0.06003487642732841,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,1.0,Strong Pareto,1,False,False,True,0.06297471387803355,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,1.0,Strong Pareto,2,False,False,True,0.06615819797422406,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,1.0,Strong Pareto,3,False,False,True,0.07023815999243888,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,1.0,Strong Pareto,4,False,False,True,0.059610769097609984,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,1.0,Weak-Pareto,0,True,True,True,0.00042027450781723097,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,1.0,Weak-Pareto,1,True,True,True,0.00023646528906184905,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,1.0,Weak-Pareto,2,True,True,True,0.00036199976177431203,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,1.0,Weak-Pareto,3,True,True,True,0.00014719147666797383,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,1.0,Weak-Pareto,4,True,True,True,0.0001205714598835339,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,5.0,Strong Pareto,0,False,False,True,0.2906370419432043,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,5.0,Strong Pareto,1,False,False,True,0.27703567345118185,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,5.0,Strong Pareto,2,False,False,True,0.28685485967114066,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,5.0,Strong Pareto,3,False,False,True,0.2716678001347903,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,5.0,Strong Pareto,4,False,False,True,0.278727158336431,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,5.0,Weak-Pareto,0,True,True,True,0.002147314995978533,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,5.0,Weak-Pareto,1,True,True,True,0.0010165917668316649,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,5.0,Weak-Pareto,2,True,True,True,0.002054088047565461,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,5.0,Weak-Pareto,3,True,True,True,0.0006834832492232934,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,5.0,Weak-Pareto,4,True,True,True,0.0007370001250677216,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,10.0,Strong Pareto,0,False,False,True,0.27042374070576125,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,10.0,Strong Pareto,1,False,False,True,0.26335284049535557,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,10.0,Strong Pareto,2,False,False,True,0.26641909355523086,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,10.0,Strong Pareto,3,False,False,True,0.25020037958366625,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,10.0,Strong Pareto,4,False,False,True,0.25766057583797797,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,10.0,Weak-Pareto,0,True,True,True,0.00437967729018518,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,10.0,Weak-Pareto,1,True,True,True,0.001629008119296893,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,10.0,Weak-Pareto,2,True,True,True,0.004686917906790322,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,10.0,Weak-Pareto,3,True,True,True,0.0011888692414827595,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,10.0,Weak-Pareto,4,True,True,True,0.0017898900234536441,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,20.0,Strong Pareto,0,False,False,True,0.268127002429557,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,20.0,Strong Pareto,1,False,False,True,0.26015672599781303,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,20.0,Strong Pareto,2,False,False,True,0.2625461645586429,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,20.0,Strong Pareto,3,False,False,True,0.24489195584695733,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,20.0,Strong Pareto,4,False,False,True,0.25336843784384344,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,20.0,Weak-Pareto,0,True,False,True,0.007269699734082646,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,20.0,Weak-Pareto,1,True,False,True,0.005497909911588161,False,False,False,False,False
+multiplicative,synthetic_fractional_burgers,20.0,Weak-Pareto,2,True,True,True,0.011633978379830046,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,20.0,Weak-Pareto,3,True,True,True,0.0027178597291037665,True,True,True,True,True
+multiplicative,synthetic_fractional_burgers,20.0,Weak-Pareto,4,True,False,True,0.0024904201267327286,False,False,False,False,False
+superunit,superunit,0.5,Strong Pareto,0,True,False,True,0.6499999999999999,False,False,False,False,False
+superunit,superunit,0.5,Strong Pareto,1,True,False,True,0.6499999999999999,False,False,False,False,False
+superunit,superunit,0.5,Strong Pareto,2,True,False,True,0.6499999999999999,False,False,False,False,False
+superunit,superunit,0.5,Strong Pareto,3,True,False,True,0.6499999999999999,False,False,False,False,False
+superunit,superunit,0.5,Strong Pareto,4,True,False,True,0.6499999999999999,False,False,False,False,False
+superunit,superunit,0.5,Weak-Pareto,0,True,True,True,0.0788943512023752,True,True,True,True,True
+superunit,superunit,0.5,Weak-Pareto,1,True,True,True,0.08606416794641403,True,True,True,True,True
+superunit,superunit,0.5,Weak-Pareto,2,True,True,True,0.08452443852499458,True,True,True,True,True
+superunit,superunit,0.5,Weak-Pareto,3,True,True,True,0.1016740984219191,False,True,True,True,True
+superunit,superunit,0.5,Weak-Pareto,4,True,True,True,0.09053080671841962,True,True,True,True,True
+superunit,superunit,1.0,Strong Pareto,0,True,False,True,0.6499999999999999,False,False,False,False,False
+superunit,superunit,1.0,Strong Pareto,1,True,False,True,1.5,False,False,False,False,False
+superunit,superunit,1.0,Strong Pareto,2,True,False,True,0.6499999999999999,False,False,False,False,False
+superunit,superunit,1.0,Strong Pareto,3,True,False,True,0.6499999999999999,False,False,False,False,False
+superunit,superunit,1.0,Strong Pareto,4,True,False,True,0.6499999999999999,False,False,False,False,False
+superunit,superunit,1.0,Weak-Pareto,0,True,True,True,0.13197261761236767,False,False,True,True,True
+superunit,superunit,1.0,Weak-Pareto,1,True,True,True,0.20000000000000018,False,False,False,False,True
+superunit,superunit,1.0,Weak-Pareto,2,True,True,True,0.20000000000000018,False,False,False,False,True
+superunit,superunit,1.0,Weak-Pareto,3,True,True,True,0.20000000000000018,False,False,False,False,True
+superunit,superunit,1.0,Weak-Pareto,4,True,True,True,0.20000000000000018,False,False,False,False,True

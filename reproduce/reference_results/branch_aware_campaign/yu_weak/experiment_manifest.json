@@ -1,0 +1,48 @@
+{
+  "created_at_utc": "2026-07-28T03:26:13.552400+00:00",
+  "python": "3.11.15",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "methods": [
+    "weak_pareto"
+  ],
+  "datasets": [
+    "paper_FADE_tsfade_fft"
+  ],
+  "noise_levels": [
+    0.0,
+    1.0,
+    5.0
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "weak_profile": "paper",
+  "yu_profile": "paper",
+  "yu_protocol": "matched",
+  "yu_order_mode": "bank",
+  "device": "cpu",
+  "input_file_hashes": {
+    "paper_FADE_tsfade_fft": {
+      "project_path": "data/tsfade_fft.dat",
+      "project_sha256": "cdec8fadbad94fad798b9e106e97f6846d181495f34e6126a45e2fb542d34dc4",
+      "yu_original_path": "external_baselines/yu2025/original/dataset/tsfade_fft.dat (not included)",
+      "yu_original_sha256": null,
+      "byte_identical": false,
+      "upstream_snapshot_included": false,
+      "upstream_byte_identity_verified": false,
+      "verification_status": "not_verified_upstream_snapshot_absent"
+    }
+  },
+  "fairness_rules": [
+    "same clean data file and same multiplicative-uniform noise generator/seed",
+    "same post-hoc truth metadata and strict operator-recovery tolerances",
+    "runtime includes each method's complete fitting framework",
+    "Yu neural and optimizer-only variants are reported separately",
+    "periodic signed-Riesz cases outside the Yu adapter's declared scope are skipped rather than silently redefined"
+  ],
+  "packaging_note": "Absolute local paths were replaced by package-relative descriptions; hashes, numerical results, and provenance status are unchanged."
+}

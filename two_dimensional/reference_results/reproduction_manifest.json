@@ -1,0 +1,105 @@
+{
+  "status": "independently reproduced after exact absolute-width reconciliation",
+  "generated_utc": "2026-07-31T04:19:24.808865+00:00",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41"
+  },
+  "data_shape": [
+    90,
+    80,
+    80
+  ],
+  "data_sha256": {
+    "benchmark_A.npz": "3e9136072d2c7b21df461914ed582abf340b2708cc222f7687db2f54957472fe",
+    "benchmark_B.npz": "e23e342ec3cf8aa05146930cd308744615ea1b8be7cf66cae1a13ce37d21a9a8"
+  },
+  "experiments": {
+    "A": {
+      "runs": 25,
+      "noise_fractions": [
+        0,
+        0.01,
+        0.05,
+        0.1,
+        0.2
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "B": {
+      "runs": 25,
+      "noise_fractions": [
+        0,
+        0.01,
+        0.05,
+        0.1,
+        0.2
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "window_ablation": {
+      "runs": 20,
+      "benchmark": "B",
+      "noise_fraction": 0.05,
+      "widths": [
+        "paper-rule",
+        0.1,
+        0.16,
+        0.24
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "search": {
+    "cmax": 4,
+    "powers": [
+      0
+    ],
+    "alpha_bounds": [
+      0.55,
+      1.25
+    ],
+    "beta_bounds": [
+      0.5,
+      2.5
+    ],
+    "alpha_nodes": 47,
+    "beta_nodes": 59,
+    "de_population_multiplier": 7,
+    "de_generations": 24,
+    "ridge": 0.001,
+    "validation_fraction": 0.25,
+    "order_tolerance": 0.15
+  },
+  "weak_test_grid": [
+    30,
+    40,
+    40
+  ],
+  "weak_rows": 48000,
+  "notes": [
+    "weak rows overlap and are not independent observations",
+    "spatial paper widths are applied as absolute widths on the full periodic length",
+    "boundary trimming is not used in the weak framework"
+  ]
+}

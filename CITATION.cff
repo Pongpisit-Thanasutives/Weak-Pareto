@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying manuscript."
+title: "Weak-Pareto: weak-form fractional differential equation discovery"
+type: software
+authors:
+  - family-names: Thanasutives
+    given-names: Pongpisit
+    email: pongpisit.thanasutives@riken.jp
+  - family-names: Kawahara
+    given-names: Yoshinobu
+version: 1.0.0
+date-released: 2026-08-02
+abstract: >-
+  Reference implementation and reproducibility package for adjoint-consistent
+  weak-form discovery of fractional differential equations with Pareto-based
+  best-subset selection over discrete term types and continuous orders.
+repository-code: "https://github.com/Pongpisit-Thanasutives/Weak-Pareto"
+url: "https://github.com/Pongpisit-Thanasutives/Weak-Pareto"

@@ -1,0 +1,31 @@
+{
+  "publication_quality": true,
+  "purpose": "focused superunit temporal-branch recovery experiment",
+  "support_fixed": "one linear term; beta and temporal branch/order are discovered",
+  "truth": {
+    "alpha": 1.65,
+    "beta": 2.0,
+    "coefficient": 0.12
+  },
+  "noise_percent": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "methods": [
+    "Weak-Pareto",
+    "Strong Pareto"
+  ],
+  "weak_time_form": "derivative",
+  "weak_time_discretization": "caputo_l1_adjoint",
+  "weak_initial_rate_treatment": "implicit_D1_in_composed_L1",
+  "weak_endpoint_noise_scaling": "O(sigma^2 h_x h_t^-2) for a fixed continuum separable test before scalar row rescaling under iid additive noise",
+  "jobs": 5
+}

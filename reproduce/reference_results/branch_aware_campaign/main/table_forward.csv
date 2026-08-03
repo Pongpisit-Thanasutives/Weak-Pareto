@@ -1,0 +1,9 @@
+benchmark,noise,e_floor,e_field,recovered,seed
+FADE,0,1.01e-02,4.74e-03,yes,4
+FADE,10,1.01e-02,9.93e-03,yes,1
+Frac. RD (space),0,1.74e-16,9.12e-05,yes,2
+Frac. RD (space),5,1.74e-16,2.73e-03,yes,1
+Frac. RD (time-space),0,1.81e-16,2.00e-04,yes,1
+Frac. RD (time-space),5,1.81e-16,3.15e-03,yes,3
+Fractional Burgers,0,4.98e-06,6.34e-04,yes,3
+Fractional Burgers,10,4.98e-06,2.05e-03,yes,4
