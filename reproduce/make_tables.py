@@ -1,11 +1,11 @@
 """Regenerate the paper's result tables (CSV + LaTeX rows).
 
-Tables produced:
-  * main       -> Table 2 (proposed weak_pareto on all benchmarks: recovery,
-                  e_alpha, e_beta_max, e_xi_max, validation error)
-  * robustness -> Table 3 (weak vs strong-form under the same selector, vs noise)
-  * progress   -> Table 4 (support-size progress for one benchmark)
-  * runtime    -> Table 5 (runtime and search budget)
+Tables produced include:
+  * main       -> proposed Weak-Pareto on the four main benchmarks
+  * rd_noise   -> Riesz reaction--diffusion order identifiability versus noise
+  * robustness -> weak versus strong-form under the same selector
+  * progress   -> support-size progress for one benchmark
+  * runtime    -> runtime and search budget
   * burgers    -> nonlinear fractional Burgers recovery and competing-structure margin
 
 Usage (from the repository root):
@@ -367,8 +367,17 @@ def _agg(ms) -> dict:
     }
 
 
-def rd_noise_table(outdir: str, fast: bool, noises=(2.0, 5.0, 10.0)) -> str:
-    """Order identifiability of the two Riesz reaction--diffusion benchmarks vs noise (structure-conditioned)."""
+def _rd_cell(m: float, sd: float) -> str:
+    """Table-4 cell with extra precision for clean, sub-percent errors."""
+    if m is None or not np.isfinite(m):
+        return "--"
+    if abs(float(m)) < 0.01 and abs(float(sd)) < 0.01:
+        return f"${m:.4f}\\pm {sd:.4f}$"
+    return _cell(m, sd)
+
+
+def rd_noise_table(outdir: str, fast: bool, noises=(0.0, 2.0, 5.0, 10.0)) -> str:
+    """Order identifiability of the two Riesz reaction--diffusion benchmarks vs noise, including clean references."""
     seeds = default_seeds(fast)
     rows = []
     for name in RD_BENCHMARKS:
@@ -394,8 +403,8 @@ def rd_noise_table(outdir: str, fast: bool, noises=(2.0, 5.0, 10.0)) -> str:
         for r in rows:
             row = (f"{r['benchmark']} & {r['noise_percent']:.0f} & {r['support_power_recovery']}/{r['n_seeds']} & "
                    f"{r['operator_structure_recovery']}/{r['n_seeds']} & "
-                   f"{_cell(r['e_alpha'], r['e_alpha_sd'])} & {_cell(r['e_beta_max'], r['e_beta_max_sd'])} & "
-                   f"{_cell(r['e_xi_max'], r['e_xi_max_sd'])} & {_pm(r['full_data_rel_l2'], r['full_data_rel_l2_sd'])}")
+                   f"{_rd_cell(r['e_alpha'], r['e_alpha_sd'])} & {_rd_cell(r['e_beta_max'], r['e_beta_max_sd'])} & "
+                   f"{_rd_cell(r['e_xi_max'], r['e_xi_max_sd'])} & {_rd_cell(r['full_data_rel_l2'], r['full_data_rel_l2_sd'])}")
             f.write(row + " " + chr(92) * 2 + "\n")
     return path
 

@@ -128,13 +128,15 @@ Outputs (written to `results/`):
 | file | manuscript object |
 | --- | --- |
 | `table_main.csv`, `table_main.tex` | Table 3 (proposed `weak_pareto` on the four main benchmarks: recovery, $e_\alpha$, $e_\beta^{\max}$, $e_\xi^{\max}$, validation error) |
-| `table_rd_noise.csv`, `table_rd_noise.tex` | Table 4 (order identifiability of the two Riesz reaction--diffusion benchmarks vs noise) |
+| `table_rd_noise.csv`, `table_rd_noise.tex` | Table 4 (order identifiability of the two Riesz reaction--diffusion benchmarks at 0%, 2%, 5%, and 10% noise) |
 | `table_robustness.csv`, `table_robustness_FADE.tex` | Table 6 (weak vs strong-form under the same selector, vs noise) |
 | `table_progress.csv`, `table_progress.tex` | Table 7 (support-size progress for one benchmark) |
 | `table_burgers.csv`, `table_burgers.tex` | Table 8 (nonlinear fractional Burgers recovery and competing-structure margin) |
 | `table_runtime.csv`, `table_runtime.tex` | Table 11 (runtime and search budget) |
 | `table_appendix.csv`, `table_appendix.tex` | Table 15 (challenging cases: default vs adjusted hyperparameters) |
 | `table_conditioning.csv`, `table_conditioning.tex` | Table 13 (coherence/condition number of a fixed dense fractional dictionary vs order spacing) |
+
+The archived `main/rd_clean_per_seed.csv` additionally records the ten clean Riesz reaction--diffusion runs used for the new 0% rows of Table 4.
 
 The `.tex` files contain the table body rows (`&`-separated, `\\`-terminated)
 ready to paste into the corresponding `tabular*` in `main.tex`.

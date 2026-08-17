@@ -1,51 +1,36 @@
-# Final verification results
+# Final verification results - 10 August 2026
 
-The exact release tree was checked in the final presubmission audit with:
+The exact revised release tree was checked with:
 
 ```text
 complete pytest suite                                  80/80 passed
-documentation audit                                    passed (53 non-test modules)
-Python syntax/bytecode compilation                     passed
+Python AST syntax check                                68/68 files passed
 bash -n on every shell script                          passed
-Burgers weak/strong smoke workflow                     passed
-superunit clean/noisy smoke workflow                   passed
-complete reproduce/run_all.sh --smoke workflow        passed
-concise tutorial script                                passed
-matching tutorial notebook                             executed successfully
+LaTeX cross-reference/citation audit                   passed
+PDF preflight and embedded-font audit                  passed
 ```
 
-The tutorial selected the intended two-term FADE support and returned
+The existing regression suite continues to cover the benchmark smoke workflows,
+operator/adjoint consistency, branch separation, superunit diagnostic,
+two-dimensional extension, result/figure consistency, and Yu-baseline adapter.
 
-```text
-D_t^0.79950 u = (-1.0068)*D_x^1.00000 u + (0.49614)*D_x^1.70000 u
-```
+## Revision-specific result check
 
-## Figure regression checks
+Table 4 now contains clean reference rows for both Riesz reaction--diffusion
+benchmarks. Five paper-profile clean seeds were run for each benchmark. Both
+cases achieved 5/5 support/power recovery and 5/5 operator-structure recovery.
+The ten per-seed records are archived at:
 
-```text
-Figure 1 values are loaded from archived publication outputs     passed
-Figure 1 Gaussian field uses the published noise definition      passed
-Figure 2 curves match table_robustness.csv                        passed
-Figure 3 curve matches table_progress.csv                         passed
-Figure 3 uses the intended linear y-axis                          passed
-Figure 4 contains all six tested noise levels                     passed
-Figure 4 full curve recomputes from the discovery code            passed
-Figure 4 agrees with Table 8 at 0%, 10%, and 25%                  passed
-Figure 4 margins remain >1 and coefficient errors remain <0.02    passed
-```
+`reproduce/reference_results/branch_aware_campaign/main/rd_clean_per_seed.csv`
 
-The six-point Burgers curve was independently recomputed from the released
-weak-library and fixed-structure fitting code.  Its archived residuals agree to
-floating-point precision.  The reference-output archive otherwise remains
-byte-for-byte unchanged from the stable pre-conversion package.
+The Table-4 aggregate archive is:
 
-## Release-integrity checks
+`reproduce/reference_results/branch_aware_campaign/main/table_rd_noise.csv`
 
-- Core discovery modules, dataset definitions, and pre-existing archived results
-  were compared by SHA-256 with the stable pre-conversion package.
-- The manuscript was compiled twice from a clean directory using the included
-  `main.bbl`.
-- The final PDF contains 40 pages, embedded fonts, no undefined citations or
-  references, no duplicate labels, no missing graphics, and no overfull boxes.
-- Figure PDFs are vector artwork except for the explicitly rasterised solution
-  fields, which are embedded at 600 dpi.
+No core discovery/operator module was modified to obtain these rows.
+
+## Figure regression status
+
+The previously approved Figure 1, Figures 2--4, and their plotting data remain
+unchanged in this revision. Existing tests bind their plotted values to archived
+publication outputs and check the Figure-3 axis and six-point Figure-4 curve.

@@ -27,7 +27,7 @@ writing the same manuscript-numbered vector PDF and 600-dpi PNG files. Figure 1 
 | Table 1 | `tab:method-positioning` | Method-positioning summary | Manuscript-only literature synthesis; no numerical script |
 | Table 2 | `tab:benchmarks` | Benchmark equations and grids | Definitions in `dataset_configs.py` and `fpde_datasets.py` |
 | Table 3 | `tab:main` | Main 10% benchmark results | `PYTHONPATH=. python reproduce/make_tables.py --only main` |
-| Table 4 | `tab:rdnoise` | Riesz reaction-diffusion versus noise | `PYTHONPATH=. python reproduce/make_tables.py --only rd_noise` |
+| Table 4 | `tab:rdnoise` | Riesz reaction-diffusion at 0%, 2%, 5%, and 10% noise | `PYTHONPATH=. python reproduce/make_tables.py --only rd_noise` |
 | Table 5 | `tab:superunit` | Superunit Caputo diagnostic | `PYTHONPATH=. python reproduce/run_superunit_experiment.py --outdir results/superunit_final --jobs 5` |
 | Table 6 | `tab:robustness` | Weak versus strong-form FADE comparison | `PYTHONPATH=. python reproduce/make_tables.py --only robustness` |
 | Table 7 | `tab:progress` | Best equation at each support size | `PYTHONPATH=. python reproduce/make_tables.py --only progress` |

@@ -68,7 +68,7 @@ def build_tasks(fast: bool, smoke: bool = False) -> list[dict[str, Any]]:
                 add("strong", name, noise, seed)
 
     # Riesz order-sensitivity table.
-    rd_noises = (2.0, 5.0, 10.0)
+    rd_noises = (0.0, 2.0, 5.0, 10.0)
     for name in RD_BENCHMARKS:
         for noise in rd_noises:
             for seed in seeds:

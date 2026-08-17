@@ -1,18 +1,17 @@
-# GitHub readiness review
+# GitHub readiness review - 10 August 2026
 
 ## Completed
 
-- Added a concise end-to-end tutorial script and a matching executed notebook.
-- Added a current manuscript figure/table-to-script map.
-- Added deterministic publication-asset renderers and regression tests that bind
-  every plotted value to archived outputs.
-- Added a static documentation audit and completed public API docstrings.
-- Added `.gitignore` and `CITATION.cff` with the planned repository URL:
-  `https://github.com/Pongpisit-Thanasutives/Weak-Pareto`.
-- Removed bytecode, notebook checkpoints, local tutorial outputs, pytest caches,
-  and LaTeX build products from the release archive.
-- Verified Python compilation, shell syntax, tutorials, smoke workflows, and all
-  80 tests.
+- End-to-end tutorial script and executed notebook are included.
+- Figure/table-to-script and public API documentation are included.
+- Deterministic publication-asset renderers and regression tests are included.
+- `.gitignore` and `CITATION.cff` use the planned repository URL.
+- The Table-4 reproduction path now includes 0%, 2%, 5%, and 10% Riesz rows.
+- The new ten-run clean Table-4 archive is included.
+- Full test suite: 80/80 passed.
+- Python syntax and all shell-script syntax checks passed.
+- Runtime caches, Python bytecode, pytest caches, notebook checkpoints, and local
+  temporary results are removed from release archives.
 
 ## Main entry points
 
@@ -21,6 +20,7 @@
 - Paper result index: `docs/PAPER_RESULTS_GUIDE.md`
 - Public API guide: `docs/CODE_DOCUMENTATION.md`
 - Full reproduction: `reproduce/README.md`
+- Table 4 only: `reproduce/make_tables.py --only rd_noise`
 
 ## One author decision remains
 
